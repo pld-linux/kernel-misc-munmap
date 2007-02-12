@@ -5,7 +5,7 @@
 %define         _orig_name      munmap
 
 Summary:	Kernel module for patching ptrace()
-Summary(pl):	Modu³ j±dra ³ataj±cy dziurê w munmap()
+Summary(pl.UTF-8):   ModuÅ‚ jÄ…dra Å‚atajÄ…cy dziurÄ™ w munmap()
 Name:		kernel-misc-%{_orig_name}
 # Is there any version???
 Version:	0.1
@@ -26,13 +26,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Kernel module for buggy munmap() system call in kernels <2.2.26,
 <2.4.25.
 
-%description -l pl
-Modu³ kernela ³ataj±cy dziurawe wywo³anie systemowe munmap() w
+%description -l pl.UTF-8
+ModuÅ‚ kernela Å‚atajÄ…cy dziurawe wywoÅ‚anie systemowe munmap() w
 kernelach <2.2.26, <2.4.25.
 
 %package -n kernel-smp-misc-%{_orig_name}
 Summary:	SMP kernel module for disabling ptrace()
-Summary(pl):	Modu³ j±dra SMP wy³±czaj±cy ptrace()
+Summary(pl.UTF-8):   ModuÅ‚ jÄ…dra SMP wyÅ‚Ä…czajÄ…cy ptrace()
 Release:	%{_rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{!?_without_dist_kernel:%requires_releq_kernel_smp}
@@ -42,8 +42,8 @@ Requires(post,postun):	/sbin/depmod
 SMP kernel module for buggy munmap() system call in kernels <2.2.26,
 <2.4.25.
 
-%description -n kernel-smp-misc-%{_orig_name} -l pl
-Modu³ j±dra SMP w³ataj±cy dziurawe wywo³anie systemowe munmap() w
+%description -n kernel-smp-misc-%{_orig_name} -l pl.UTF-8
+ModuÅ‚ jÄ…dra SMP wÅ‚atajÄ…cy dziurawe wywoÅ‚anie systemowe munmap() w
 kernelach <2.2.26, <2.4.25.
 
 %prep
